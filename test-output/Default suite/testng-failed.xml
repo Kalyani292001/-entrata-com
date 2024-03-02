@@ -5,9 +5,9 @@
     <classes>
       <class name="entrata.TestCasesTwo">
         <methods>
+          <include name="Ribin"/>
           <include name="SetUpOne"/>
           <include name="CloseBrowser"/>
-          <include name="SheduleDemo"/>
         </methods>
       </class> <!-- entrata.TestCasesTwo -->
     </classes>
