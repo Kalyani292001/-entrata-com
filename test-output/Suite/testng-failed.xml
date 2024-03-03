@@ -5,8 +5,13 @@
     <classes>
       <class name="entrata.TestCasesTwo">
         <methods>
+          <include name="testHomePageFunction"/>
+          <include name="SetUp"/>
           <include name="SetUpOne"/>
           <include name="CloseBrowser"/>
+          <include name="ProductsIsVisible"/>
+          <include name="SignIn"/>
+          <include name="tearDown"/>
           <include name="SheduleDemo"/>
         </methods>
       </class> <!-- entrata.TestCasesTwo -->

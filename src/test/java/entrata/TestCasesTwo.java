@@ -24,9 +24,10 @@ public class TestCasesTwo {
 		driver = new ChromeDriver();
 		driver.get("https://www.entrata.com/");
 		driver.manage().window().maximize();
+
 	}
 
-	@Test(enabled = false)
+	@Test
 	public void SheduleDemo() {
 //		String ParentWindow=driver.getWindowHandle();
 //		System.out.println(ParentWindow);
@@ -83,7 +84,7 @@ public class TestCasesTwo {
 		WebElement exampleElement = driver
 				.findElement(By.xpath("//*[@id=\"focusTrap\"]/div/div[2]/div/div/div/div[2]/p"));
 		String actualMessage = exampleElement.getText();
-
+		System.out.println(actualMessage);
 		// Assert the text using TestNG's Assert class
 		// Admins and Registrants can't have the same email address.
 		Assert.assertEquals(actualMessage, "Admins and Registrants can't have the same email address.");
@@ -91,7 +92,7 @@ public class TestCasesTwo {
 	}
 
 	@Test
-	public void Ribin() {
+	public void ProductsIsVisible() {
 		Actions action = new Actions(driver);
 		WebElement hover = driver.findElement(By.cssSelector(
 				"#gatsby-focus-wrapper > div > div.main-header > div > div > div.header-desktop-nav.hide-on-mobile > div:nth-child(1) > div.main-nav-link"));
@@ -100,7 +101,6 @@ public class TestCasesTwo {
 				"//*[@id=\"gatsby-focus-wrapper\"]/div/div[1]/div/div/div[2]/div[1]/div[2]/div/div[1]/div[1]/a[1]"));
 		boolean visible = hoverElemnet.isDisplayed();
 		Assert.assertTrue(visible);
-
 	}
 
 	@AfterMethod
