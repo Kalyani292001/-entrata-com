@@ -11,16 +11,16 @@ It leverages the Selenium WebDriver framework to interact with the web pages and
 - TestNg
 
 ## Project Structure
-The project follows a standard Maven project structure.
-src/main/java: Contains the main source code.
-src/test/java: Contains test code.
-src/test/resources: Configuration files, test data, etc.
-pom.xml:All maven dependency here(download TestNG JAR files)
+-The project follows a standard Maven project structure.
+-src/main/java: Contains the main source code.
+-src/test/java: Contains test code.
+-src/test/resources: Configuration files, test data, etc.
+-pom.xml:All maven dependency here(download TestNG JAR files)
 
 # Sample Configuration
-webdriver.driver=chrome
-webdriver.chrome.driver=/path/to/chromedriver.exe
-base.url=https://www.entrata.com
+-webdriver.driver=chrome
+-webdriver.chrome.driver=/path/to/chromedriver.exe
+-base.url=https://www.entrata.com
 
 ## Running Tests
 -you can usually right-click on your TestNG XML file and select "Run" or "Run As TestNG Suite."
